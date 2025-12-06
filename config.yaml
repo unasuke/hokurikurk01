@@ -1,0 +1,23 @@
+---
+id: hokurikurk01
+base_name: slide
+tags: ["ruby", "rails", "kaigionrails"]
+presentation_date: 2025-12-06
+presentation_start_time:
+presentation_end_time:
+version: 1.0.0
+licenses: ["MIT"]
+slideshare_id:
+speaker_deck_id:
+vimeo_id:
+youtube_id:
+width: 1920
+height: 1080
+source_code_uri: https://github.com/unasuke/hokurikurk01
+author:
+  markup_language: :rd
+  name: unasuke
+  email: yusuke1994525@gmail.com
+  rubygems_user: unasuke
+  slideshare_user:
+  speaker_deck_user:
