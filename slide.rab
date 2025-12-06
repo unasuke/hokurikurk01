@@ -1,0 +1,478 @@
+= Kaigi on Rails 2025におけるsubscreenの実装について
+
+: author
+  うなすけ
+: content-source
+  北陸Ruby会議01
+: date
+  2025-12-06
+: theme
+  theme
+
+= 自己紹介
+
+  * Name: うなすけ
+  * Work: フリーランス
+  * Kaigi on Rails Organizer
+  * (('tag:x-small')) GitHub ((<URL:https://github.com/unasuke>))
+  * (('tag:x-small')) Fediverse ((<URL:https://mstdn.unasuke.com/@unasuke>))
+  * (('tag:x-small')) X ((<URL:https://x.com/yu_suke1994>))
+
+
+  # image
+  # src = img/icon_face.jpeg
+  # relative_width = 24
+  # align = right
+  # relative_margin_right = -8
+  # relative_margin_top = 33
+
+= 自己紹介
+  # image
+  # src = img/bio.png
+  # align = center
+  # relative_width = 80
+
+* 12/3 8番らーめん 野菜こく旨らーめん
+* 12/5 8番らーめん 唐麺
+* 12/8 ヨーロッパ軒 パリ丼 (予定？)
+
+= scan me!
+
+  # image
+  # src = img/shirataki_qr.svg
+  # align = center
+  # relative_width = 40
+
+(('tag:center'))このあとのスライドでも出します
+
+
+= Kaigi on Railsとは
+
+  # blockquote
+  # title = https://kaigionrails.org/2025/about/
+  Kaigi on Rails is an approachable, inclusive, web-focused tech conference, designed to
+  lower the barrier of entry to participating
+  in conferences.
+
+  Kaigi on Railsのコアコンセプトは「初学者から上級者までが楽しめるWeb系の技術カンファレンス」 です。
+
+\n
+
+  # image
+  # src = img/shirataki_qr.svg
+  # align = right
+  # relative_width = 15
+  # relative_margin_right = -8
+  # relative_margin_top = 33
+
+= Kaigi on Rails 2025
+
+  # image
+  # src = img/kaigionrails_2025_policies.png
+  # align = center
+  # relative_width = 55
+
+
+(('tag:center'))EN/JA
+
+  # image
+  # src = img/shirataki_qr.svg
+  # align = right
+  # relative_width = 15
+  # relative_margin_right = -3
+  # relative_margin_top = 33
+
+
+= Kaigi on Rails 2025
+
+  # image
+  # src = img/kaigionrails_2025_policies.png
+  # align = center
+  # relative_width = 55
+
+
+(('tag:center'))国際カンファレンスっぽい！
+
+  # image
+  # src = img/shirataki_qr.svg
+  # align = right
+  # relative_width = 15
+  # relative_margin_right = -3
+  # relative_margin_top = 33
+
+= Kaigi on Rails 2025は国際カンファレンス？
+
+* 「これができてれば国際カンファレンス」という基準はない
+  * と、思ってるけど……
+* 海外からの参加者
+* 英語による発表
+* 英語によるアナウンス
+* ビザ取得支援
+* 同時通訳
+* 字幕
+
+\n
+
+  # image
+  # src = img/shirataki_qr.svg
+  # align = right
+  # relative_width = 15
+  # relative_margin_right = -8
+  # relative_margin_top = 33
+
+= Kaigi on Rails 2025は国際カンファレンス？
+
+* 「これができてれば国際カンファレンス」という基準はない
+  * と、思ってるけど……
+* 海外からの参加者
+* 英語による発表
+* 英語によるアナウンス
+* ビザ取得支援
+* ((*同時通訳*))
+* ((*字幕*))
+
+\n
+
+  # image
+  # src = img/shirataki_qr.svg
+  # align = right
+  # relative_width = 15
+  # relative_margin_right = -8
+  # relative_margin_top = 33
+
+= Kaigi on Rails 2025の国際化
+
+* JA → EN の同時通訳
+  * 発表数的に厳しい
+* EN → JA の同時通訳
+  * こちらを用意した
+  * 全員分のレシーバーを用意するのは厳しい
+
+同時通訳のリソースが十分ではない
+
+→ 字幕も用意したいよね
+
+\n
+  # image
+  # src = img/shirataki_qr.svg
+  # align = right
+  # relative_width = 15
+  # relative_margin_right = -8
+  # relative_margin_top = 33
+
+= Kaigi on Rails 2025の国際化
+
+  # image
+  # src = img/ioquatix_with_transcribe.jpg
+  # align = center
+  # relative_width = 70
+\n
+  # image
+  # src = img/shirataki_qr.svg
+  # align = right
+  # relative_width = 15
+  # relative_margin_right = -3
+  # relative_margin_top = 33
+
+= カンファレンスと字幕
+
+* VimConf 2024
+  * ((<URL:https://pocketalk.jp>))
+* Observability Conference Tokyo 2025
+  * ((<URL:https://www.cuckoo.so/jp/>))
+
+\n
+
+  # image
+  # src = img/shirataki_qr.svg
+  # align = right
+  # relative_width = 15
+  # relative_margin_right = -8
+  # relative_margin_top = 33
+
+= Kaigiと字幕
+
+* RubyKaigi
+  * ((<URL:https://github.com/ruby-no-kai/takeout-app>))
+  * ((<URL:https://github.com/ruby-no-kai/signage-app>))
+* 東京Ruby会議12
+  * ((<URL:https://github.com/tokyorubykaigi12/captioner>))
+
+Fork?
+
+  # image
+  # src = img/shirataki_qr.svg
+  # align = right
+  # relative_width = 15
+  # relative_margin_right = -8
+  # relative_margin_top = 33
+
+= keynote speakers
+
+  # image
+  # src = img/kaigionrails_2025_keynote_speakers.png
+  # align = center
+  # relative_width = 100
+
+= Falcon's author
+
+  # image
+  # src = img/esa_tech_todo.png
+  # align = center
+  # relative_width = 100
+
+= new Falcon app
+
+* Falconのアプリって作ったことない
+  * ありますか？KaigiEffectで触った人はいる？
+* リアルタイム文字起こしのアプリって作ったことない
+  * さっきのコードを読めばなんとなくわかるけど
+* リアルタイムにデータを配信するアプリって……
+  * Action Cableではない
+  * WebSocketならちょっとあるけど、WebSocketなの？
+
+= 壁打ち
+
+  # image
+  # src = img/claude_1.png
+  # align = center
+  # relative_width = 90
+
+= 壁打ち
+
+  # image
+  # src = img/claude_2.png
+  # align = center
+  # relative_width = 90
+
+= 壁打ち
+
+  # image
+  # src = img/claude_3.png
+  # align = center
+  # relative_width = 90
+
+= 壁打ち
+
+  # image
+  # src = img/claude_4.png
+  # align = center
+  # relative_width = 90
+
+= 壁打ち
+
+  # image
+  # src = img/claude_5.png
+  # align = center
+  # relative_width = 90
+
+= 壁打ち
+
+  # image
+  # src = img/claude_6.png
+  # align = center
+  # relative_width = 90
+
+= 壁打ち
+
+  # image
+  # src = img/claude_7.png
+  # align = center
+  # relative_width = 90
+
+= 壁打ち
+
+  # image
+  # src = img/claude_8.png
+  # align = center
+  # relative_width = 90
+
+= Vibe Coding
+
+  # image
+  # src = img/vibe_coding_1.png
+  # align = center
+  # relative_width = 100
+
+= Vibe Coding
+
+  # image
+  # src = img/vibe_coding_2.png
+  # align = center
+  # relative_width = 100
+
+= Vibe Coding (9/22)
+
+  # image
+  # src = img/vibe_coding_3.png
+  # align = center
+  # relative_width = 60
+
+(('tag:center'))本番4日前にやることではない
+
+= Vibe codingまとめ
+
+* まずはAIと壁打ちして方針決め
+  * これは6月頃からやっていた
+* 方針をもとに手元でVibe coding
+  * Claude Max
+* AWSの環境を構築するTerraformは人力
+  * やるべきことがわかっているので
+
+= できたもの
+* ((<URL:https://github.com/kaigionrails/shirataki>))
+  * ffmpegで配信を受け取り、音声をAmazon Transcribeに流す
+  * Transcribeの結果をBedrockで英訳する
+  * 日本語とAI訳をValkeyにstreamする
+  * Valkey経由でstreamされた字幕情報をFalconがSSEする
+* ((<URL:https://github.com/kaigionrails/terraform/pull/18>))
+  * Valkey serverless
+  * shiratakiが動くEC2
+  * shiratakiにリクエストを流すALB
+  * などなど
+
+= Kaigi on Rails 2025での構成
+
+  # image
+  # src = img/shirataki_arch_kaigionrails2025.png
+  # align = center
+  # relative_width = 100
+
+= トラブル集
+
+* 本番環境で動かない
+* 配信が止まると全てが止まる
+* 同時通訳との兼ね合い
+* (BedrockのAPI call quotaにひっかかる)
+
+= 本番環境で動かないトラブル
+
+* 検証環境では動いていたのに本番で動かない！
+* ブラウザからのSSE受信ができていない
+* EC2上のプロセスは動いている
+
+= 本番環境で動かないトラブル
+
+* 検証環境では動いていたのに本番で動かない！
+* ブラウザからのSSE受信ができていない
+* EC2上のプロセスは動いている
+* 理由
+  * 本番へのドメイン登録忘れ
+  * ブラウザ(というかOS)がNXDOMAIN？をキャッシュ？
+    * ドメイン登録とOS再起動で解決
+
+= 配信が止まると全てが止まるトラブル
+
+  # image
+  # src = img/sorah_x_post.png
+  # align = center
+  # relative_width = 80
+
+(('tag:center'))((<URL:https://x.com/sora_h/status/1971479957508587953>))
+
+= 配信が止まると全てが止まるトラブル
+
+* インターネットへの接続が不安定
+* Cloudflareへのストリーミングが止まる
+* するとCloudflareからのストリーミングも止まる
+* ffmpegによる受信プロセスが終了し、おしまい
+
+= 配信が止まると全てが止まるトラブル
+
+* インターネットへの接続が不安定
+* Cloudflareへのストリーミングが止まる
+* するとCloudflareからのストリーミングも止まる
+* ffmpegによる受信プロセスが終了し、おしまい
+* 解決策
+  * 手元PCでログをずっと見守る
+  * 止まったら再起動
+  * 部屋から「字幕止まってる」という報告があれば再起動
+
+= 同時通訳セッションのトラブル
+
+  # image
+  # src = img/shirataki_arch_kaigionrails2025.png
+  # align = center
+  # relative_width = 100
+
+= 同時通訳セッションのトラブル
+
+* 音声の言語は動的に変えられない
+* 環境変数で現在の言語を指定している
+* 同時通訳のセッションはJAもENも流れてくる
+  * 翻訳がいらない
+
+\n
+  # image
+  # src = img/shirataki_arch_kaigionrails2025.png
+  # align = right
+  # relative_width = 35
+  # relative_margin_right = -8
+  # relative_margin_top = -20
+
+= 同時通訳セッションのトラブル
+
+* 音声の言語は動的に変えられない
+* 環境変数で現在の言語を指定している
+* 同時通訳のセッションはJAもENも流れてくる
+  * 翻訳がいらない
+* 解決策
+  * セッション切り替えのタイミングで素早く設定を切り替えて再起動
+  * 英語セッションが終わったら戻す
+
+\n
+  # image
+  # src = img/shirataki_arch_kaigionrails2025.png
+  # align = right
+  # relative_width = 35
+  # relative_margin_right = -8
+  # relative_margin_top = -20
+
+= なんとかKaigi on Rails 2025を乗り切った
+
+* おおむね動いていた(と思う)
+* 用意したリソースは十分だった
+  * t3.mediumを4台だっけ？(うろおぼえ)
+* ないよりマシ、くらいのものは提供できたのでは？
+
+= 見えてきた課題
+
+* 前述の問題
+  * 配信が止まったときの復旧
+  * 動的な翻訳の有無
+* SSEの再接続
+  * エラーになったら画面リロード
+* メトリックを取る
+  * 今何人見てるのか
+* 属人化
+  * 自分の脳内にしかない手順
+
+= AIに書かせてみてどうだった？
+
+* 時間がないときには本当に助かる
+  * 質はまあ……それなり
+* 自分のコードじゃない感じ
+  * 責任は自分にあるのはそう
+  * 「自分で書いた」感は本当に希薄
+
+= 「自分で書きたい」という想い
+
+* ((<URL:https://github.com/unasuke/shirataki/tree/hokurikurk01>))
+  * 北陸Ruby会議01に向けて少し手を入れた
+    * ffmpegの再起動
+    * view
+    * OpenTelemetry
+  * このdiffはほぼ手で書いた
+
+= たのしいRuby
+
+  # image
+  # src = img/joyful_ruby.jpg
+  # align = center
+  # relative_width = 70
+
+= まとめっぽく
+
+* 自分たちのカンファレンスは自分たちで作りたい
+* カンファレンスをやるのは楽しい
+* Rubyを書くのは楽しい
