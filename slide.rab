@@ -26,26 +26,6 @@
   # relative_margin_right = -8
   # relative_margin_top = 33
 
-= 自己紹介
-  # image
-  # src = img/bio.png
-  # align = center
-  # relative_width = 80
-
-* 12/3 8番らーめん 野菜こく旨らーめん
-* 12/5 8番らーめん 唐麺
-* 12/8 ヨーロッパ軒 パリ丼 (予定？)
-
-= scan me!
-
-  # image
-  # src = img/shirataki_qr.svg
-  # align = center
-  # relative_width = 40
-
-(('tag:center'))このあとのスライドでも出します
-
-
 = Kaigi on Railsとは
 
   # blockquote
@@ -56,14 +36,6 @@
 
   Kaigi on Railsのコアコンセプトは「初学者から上級者までが楽しめるWeb系の技術カンファレンス」 です。
 
-\n
-
-  # image
-  # src = img/shirataki_qr.svg
-  # align = right
-  # relative_width = 15
-  # relative_margin_right = -8
-  # relative_margin_top = 33
 
 = Kaigi on Rails 2025
 
@@ -75,14 +47,6 @@
 
 (('tag:center'))EN/JA
 
-  # image
-  # src = img/shirataki_qr.svg
-  # align = right
-  # relative_width = 15
-  # relative_margin_right = -3
-  # relative_margin_top = 33
-
-
 = Kaigi on Rails 2025
 
   # image
@@ -92,13 +56,6 @@
 
 
 (('tag:center'))国際カンファレンスっぽい！
-
-  # image
-  # src = img/shirataki_qr.svg
-  # align = right
-  # relative_width = 15
-  # relative_margin_right = -3
-  # relative_margin_top = 33
 
 = Kaigi on Rails 2025は国際カンファレンス？
 
@@ -111,14 +68,6 @@
 * 同時通訳
 * 字幕
 
-\n
-
-  # image
-  # src = img/shirataki_qr.svg
-  # align = right
-  # relative_width = 15
-  # relative_margin_right = -8
-  # relative_margin_top = 33
 
 = Kaigi on Rails 2025は国際カンファレンス？
 
@@ -131,14 +80,6 @@
 * ((*同時通訳*))
 * ((*字幕*))
 
-\n
-
-  # image
-  # src = img/shirataki_qr.svg
-  # align = right
-  # relative_width = 15
-  # relative_margin_right = -8
-  # relative_margin_top = 33
 
 = Kaigi on Rails 2025の国際化
 
@@ -152,27 +93,12 @@
 
 → 字幕も用意したいよね
 
-\n
-  # image
-  # src = img/shirataki_qr.svg
-  # align = right
-  # relative_width = 15
-  # relative_margin_right = -8
-  # relative_margin_top = 33
-
 = Kaigi on Rails 2025の国際化
 
   # image
   # src = img/ioquatix_with_transcribe.jpg
   # align = center
   # relative_width = 70
-\n
-  # image
-  # src = img/shirataki_qr.svg
-  # align = right
-  # relative_width = 15
-  # relative_margin_right = -3
-  # relative_margin_top = 33
 
 = カンファレンスと字幕
 
@@ -180,15 +106,6 @@
   * ((<URL:https://pocketalk.jp>))
 * Observability Conference Tokyo 2025
   * ((<URL:https://www.cuckoo.so/jp/>))
-
-\n
-
-  # image
-  # src = img/shirataki_qr.svg
-  # align = right
-  # relative_width = 15
-  # relative_margin_right = -8
-  # relative_margin_top = 33
 
 = Kaigiと字幕
 
@@ -199,13 +116,6 @@
   * ((<URL:https://github.com/tokyorubykaigi12/captioner>))
 
 Fork?
-
-  # image
-  # src = img/shirataki_qr.svg
-  # align = right
-  # relative_width = 15
-  # relative_margin_right = -8
-  # relative_margin_top = 33
 
 = keynote speakers
 
